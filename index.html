@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="high">
+        <h1>AI Background Remover with Cropping</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="removeBgButton">Remove Background</button>
+    </div>
+    <div id="output">
+        <p>Processed image will appear here:</p>
+        <canvas id="cropCanvas"></canvas>
+        <img id="resultImage" alt="Processed Image" />
+    </div>
+    <button id="downloadButton">Download Image</button>
+    
+  <label for="brightness">Brightness:</label>
+  <input type="range" id="brightness" min="0" max="200" value="100" />
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
